@@ -17,6 +17,7 @@ if hp <= 0 {
 	instance_destroy() // Or however you want to kill your player.
 }
 ```
+
 Pretty basic and functional. We set a max value, we clamp our values so we don't go above the max, or below 0, and when we are at or below 0 we die.
 If we wanted to expand this logic to work with enemies and bosses, maybe we make a parent object, such as ``obj_actor_parent``, and it can inherit the HP and damage logic.
 
@@ -75,6 +76,7 @@ show_debug_message($"HP: {_hp}/{_hp_max}")
 hp.set(1)
 // Now we're at 1 HP
 ```
+
 Keep in mind, none of this works, none of the logic has been coded, but we've mapped out how we want to be able to use this. Now that we know what functions we are expecting, we can create them:
 ```
 function Resource(_max) constructor{
@@ -92,6 +94,7 @@ function Resource(_max) constructor{
 	static is_empty = function(){} 
 }
 ```
+
 We'll ignore the keyword stacic for this tutorial for now. Once we have our functions in place, we can fill in the blank with the logic for each of theses functions:
 ```
 function Health(_max) constructor{
