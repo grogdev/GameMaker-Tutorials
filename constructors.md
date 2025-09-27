@@ -1,6 +1,6 @@
 WIP Constructor Tutorial
 
-When GameMaker devs are trying to understand and use constructors, this is an example I often give. 
+This is the typical example I give when a GameMaker dev is trying to understand the power and flexability of structs.
 
 Let's start with a basic implementation of HP on a player object, something every GameMaker developer has likely coded before:
 ```
