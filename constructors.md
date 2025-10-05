@@ -47,8 +47,8 @@ Right now this doesn't do anything at all, but we can start envisioning what sor
 
 With this in mind, I like to pretend this functionality exists, and start coding how I'd expect it to work:
 ```
-// Create a new instance of "Health", with 100 max HP
-hp = new Health(100)
+// Create a new instance of "Resource", with 100 "points"
+hp = new Resource(100)
 
 // Remove 25 -> 75/100
 hp.deplete(25)
@@ -97,7 +97,7 @@ function Resource(_max) constructor{
 
 We'll ignore the keyword stacic for this tutorial for now. Once we have our functions in place, we can fill in the blank with the logic for each of theses functions:
 ```
-function Health(_max) constructor{
+function Resource(_max) constructor{
 	value_max = _max
 	value     = _max
 	
